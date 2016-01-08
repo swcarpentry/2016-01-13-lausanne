@@ -7,7 +7,7 @@ country: Switzerland    # country (lowercase two-letter ISO code such as "fr" - 
 language: en   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: 46.5213679,6.5720468    # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
 humandate: Jan 13-14, 2016  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: 9:00 am - 5:00 pm  # human-readable time (e.g., "9:00 am - 4:30 pm")
+humantime: 9:00 am - 4:30 pm  # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-01-13  # use YYYY-MM-DD format like "2015-01-01"
 enddate: 2016-01-14    # use YYYY-MM-DD format like" 2015-01-02"
 trainer: ["Tracy Teal", "Aleksandra Pawlik"]    # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -17,15 +17,7 @@ eventbrite: 18432677635 # optional (insert the alphanumeric key for Eventbrite r
 prep-repository: https://github.com/carpentry-instructor-training/2016-01-13-training-prep
 ---
 
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
+
 
 
 
@@ -37,25 +29,40 @@ prep-repository: https://github.com/carpentry-instructor-training/2016-01-13-tra
   computing.  This hands-on two-day workshop covers the basics of
   educational psychology and instructional design, and looks at how to
   use these ideas in both intensive workshops and regular classes. The
-  workshop is a mix of lectures and hand-on lessons where you practice
+  workshop is a mix of lectures and hands-on lessons where you practice
   giving a short lesson using approaches learned and implement some of
   the teaching techniques which we will discuss.  This is training for
   teaching, not technical training; you do not need any particular
-  technical background, and we will not be teaching that.This workshop
+  technical background, and we will not be teaching that. This workshop
   is based on the constantly revised and updated
  <a href="{{site.swc_githubio}}/instructor-training/">curriculum</a>.
 </p>
 
 <p>
   <strong>Who:</strong> The course is aimed at everyone who is
-  interested in becoming a better teacher. In particular, this trainig
+  interested in becoming a better teacher. In particular, this training
   is aimed at those who want to become Software and Data Carpentry
   instructors, run workshops and contribute to the Carpentry training
-  materials.  You don't have to be currently an instructor or a
-  teacher to attend this workshop. But you do need to be willing and
-  committed to become one and to improve your teaching techniques.
+  materials.  You don't currently have to be an instructor or a
+  teacher to attend this workshop, but you do need to be willing and
+  committed to becoming one and to improving your teaching techniques.
 </p>
 
+
+<h2>Acknowledgements</h2>
+<p>This workshop is supported by the <a href="https://www.elixir-europe.org/">ELIXIR</a> project.</p>
+
+<div class="banner">
+    <a href="https://www.elixir-europe.org/about/elixir-switzerland" title="ELIXIR CH">
+    <img alt="ELIXIR CH logo" src="img/elixir_ch_logo.png" />
+  </a>
+    <a href="http://elixir-uk.org/" title="ELIXIR UK">
+    <img alt="ELIXIR UK logo" src="img/ELIXIR_UNITEDKINGDOM_white_background.png" />
+  </a>
+
+</div>
+
+<hr/>
 
 {% if page.latlng %}
 <p>
@@ -80,133 +87,95 @@ Limited car spaces for visitors are available behind the building. </li>
 </p>
 {% endif %}
 
-<!--
-  SPECIAL REQUIREMENTS
-
-  Modify the block below if there are any special requirements.
--->
 <p>
-  <strong>Requirements:</strong> 
-  Participants should bring a laptop that is Internet connected and has a functioning browser. 
-  If you have it, a specialized device for recording audio and video 
-  (mobile phones and laptops are OK) - throughout the two days, 
-  we are going to record one another teaching in pairs or threes. 
-  It does not have to be high-quality, 
- but it should be good enough that you can understand what someone is saying.
-
-  <p><em>Also, make sure you read the
-    <a href="#preparation">Preparation</a> section below.</em> You will also receive some further 
-   information before the workshop so please check your email.</p>
-
-   All paricipants are also required to abide by
+  <strong>Requirements:</strong> Participants should bring a laptop
+  that is Internet connected and has a functioning browser.  If you
+  have it, a device for recording audio and video (mobile phones and
+  laptops are OK) is useful as throughout the two days, we are going to record
+  one another teaching in pairs or threes.  It does not have to be
+  high-quality, but it should be good enough that you can understand
+  what someone is saying.
+</p>
+<p>
+  Please also read the
+  <a href="#preparation">Preparation</a> section below.  You will also
+  receive some further information before the workshop so please check
+  your email.
+</p>
+<p>
+  All participants are also required to abide by
   Software Carpentry's <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
-<!--
-  CONTACT EMAIL ADDRESS
-
-  Display the contact email address set in the header.  If an address
-  isn't set in the header, the Software Carpentry admin address is
-  used.
--->
 <p>
   <strong>Contact</strong>:
-  Please mail
+  Please email
   {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+    <a href="mailto:{{page.contact}}">{{page.contact}}</a>
   {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+    <a href="mailto:{{site.contact}}">{{site.contact}}</a>
   {% endif %}
   for more information.
 </p>
 
 <hr/>
 
-<h2>Acknowledgements</h2>
-<p>This workshop is supported by the <a href="https://www.elixir-europe.org/">ELIXIR</a> project.</p>
 
-<!--
-  SCHEDULE
 
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
--->
 <h2>Schedule</h2>
 
 <div class="row">
   <div class="col-md-6">
-  <h3>Day 1</h3>
-   <table class="table table-striped">
-     <tr> <td>09:00</td> <td>Welcome and introductions</td></tr>
-     <tr> <td>09:30</td> <td>Overview: key concepts and training goals</td></tr>
-     <tr> <td>10:00</td> <td>Formative vs. summative assessment</td></tr>
-     <tr> <td>10:30</td> <td>Coffee break</td></tr>
-     <tr> <td>11:00</td> <td>Teaching as performance art</td> </tr>
-     <tr> <td>12:00</td> <td>Lunch break</td></tr>
-     <tr> <td>13:00</td> <td>Discussion on the exercise on teaching as performance art</td> </tr>
-     <tr> <td>14:00</td> <td>Concept maps</td> </tr>
-     <tr> <td>14:30</td> <td>Coffee break</td> </tr>
-     <tr> <td>15:00</td> <td> Concept maps - continued</td> </tr>
-     <tr> <td>16:00</td> <td>Motivation and demotivation. Diversity. Indifference.</td> </tr>
-     <tr> <td>16:45</td> <td>Wrap-up</td> </tr>
-     <tr> <td>17:00</td> <td>Close</td> </tr>
-   </table>
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td> <td>Welcome and introductions</td></tr>
+      <tr> <td>09:30</td> <td>Mental models</td></tr>
+      <tr> <td>10:00</td> <td>Formative vs. summative assessment</td></tr>
+      <tr> <td>10:30</td> <td>Coffee break</td></tr>
+      <tr> <td>11:00</td> <td>Teaching as performance art</td> </tr>
+      <tr> <td>12:00</td> <td>Lunch break</td></tr>
+      <tr> <td>13:00</td> <td>Concept maps</td> </tr>
+      <tr> <td>14:30</td> <td>Coffee break</td> </tr>
+      <tr> <td>15:00</td> <td>Cognitive load theory</td> </tr>
+      <tr> <td>15:30</td> <td>Instructional design. Learning objectives.</td> </tr>
+      <tr> <td>16:15</td> <td>Homework overview</td> </tr>
+      <tr> <td>16:30</td> <td>Close</td> </tr>
+    </table>
   </div>
   <div class="col-md-6">
-   <h3>Day 2</h3>
+    <h3>Day 2</h3>
     <table class="table table-striped">
-     <tr> <td>09:00</td> <td>Recap and homework review<br></td> </tr>
-     <tr> <td>09:30</td> <td>Alternative formative assessment techniques</td> </tr>
-     <tr> <td>10:30</td> <td>Coffee break</td> </tr>
-     <tr> <td>11:00</td> <td>Live coding and active learning</td> </tr>
-     <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-     <tr> <td>13:00</td> <td>Overview of Software and Data Carpentry infrastructure</td> </tr>
-     <tr> <td>13:30</td> <td>Setting up and running a workshop</td> </tr>
-     <tr> <td>14:30</td> <td>Coffee break</td> </tr>
-     <tr> <td>15:00</td> <td>Overview of existing materials; how to contribute</td> </tr>
-     <tr> <td>16:00</td> <td>Next setps</td> </tr>
-     <tr> <td>16:45</td> <td>Wrap-up</td> </tr>
-     <tr> <td>17:00</td> <td>Close</td> </tr>
-  </table>
+      <tr> <td>09:00</td> <td>Recap and homework review<br></td> </tr>
+      <tr> <td>09:45</td> <td>Live coding and active learning.</td> </tr>
+      <tr> <td>10:30</td> <td>Coffee break</td> </tr>
+      <tr> <td>11:00</td> <td>Live coding - continued</td> </tr>
+      <tr> <td>11:30</td> <td>Motivation and demotivation</td> </tr>
+      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Overview of Software and Data Carpentry infrastructure</td> </tr>
+      <tr> <td>13:30</td> <td>Setting up and running a workshop</td> </tr>
+      <tr> <td>14:30</td> <td>Coffee break</td> </tr>
+      <tr> <td>15:00</td> <td>Overview of existing materials; how to contribute</td> </tr>
+      <tr> <td>16:00</td> <td>Next steps</td> </tr>
+      <tr> <td>16:30</td> <td>Close</td> </tr>
+    </table>
   </div>
 </div>
 
-<!--
-  ETHERPAD
-
-  At `_misc/etherpad.txt` you will find a template for the etherpad.
-
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
-
-      http://pad.software-carpentry.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop,
-  e.g., '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
-
 <hr/>
-
-<h2>Syllabus</h2>
+<h2> Syllabus </h2>
 <ul>
-  <li><a href="{{site.swc_githubio}}instructor-training/01-models.html">Mental Models</a></li>
-  <li><a href="{{site.swc_githubio}}instructor-training/02-cognition.html">Cognitive Development</a></li>
-  <li><a href="{{site.swc_githubio}}instructor-training/03-design.html">Lesson Design</a></li>
-  <li><a href="{{site.swc_githubio}}instructor-training/04-performance.html">Teaching as a Performance Art</a></li>
-  <li><a href="{{site.swc_githubio}}instructor-training/05-motivation.html">Motivation and Demotivation</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/01-introduction.html">Introduction</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/02-models.html">Mental Models</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/03-maps.html">Concept Maps</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/04-faded.html">Faded Examples</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/05-design.html">Lesson Design</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/06-objectives.html">Learning Objectives</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/07-motivation.html">Motivation and Demotivation</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/08-performance.html">Teaching as a Performance Art</a></li>
+  <li><a href="{{site.swc_githubio}}instructor-training/09-why.html">Why I Teach</a></li>
 </ul>
+
 <hr/>
-
-
 
 
 <h2 id="preparation" name="preparation">Preparation</h2>
@@ -224,14 +193,15 @@ Limited car spaces for visitors are available behind the building. </li>
     <li>
       Please also pick up a copy of
       <a href="http://www.amazon.com/How-Learning-Works-Research-Based-Jossey-Bass/dp/0470484101/">"How
-      Learning Works"</a>, which is the best summary going of research
+      Learning Works"</a>, which is currently the best summary of research
       in education. It is full of useful insights, and a lot of how we
       teach is based on the findings it reports.
     </li>
     <li>
-      Please go
+
+      Finally, please go
       to <a href="{{site.swc_site}}/lessons.html">Software Carpentry's
-      lessons page</a> and <a href="{{site.dc_site}}/lessons/">Data Carpentry's lesson page</a>
+      lessons page</a> and <a href="{{site.dc_site}}/lessons/">Data Carpentry's lessons page</a>
       to see what is currently taught by each.
     </li>
 
@@ -263,7 +233,6 @@ Limited car spaces for visitors are available behind the building. </li>
 </ol>
 
 
-
 <p>
   If you are interested in doing more
   reading, <a href="http://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674066170">Huston's
@@ -273,12 +242,7 @@ Limited car spaces for visitors are available behind the building. </li>
   <a href="http://www.amazon.com/Building-Better-Teacher-Teaching-Everyone/dp/0393081591">"Building
     a Better Teacher"</a>, which is a well-written look at why
   educational reforms in the past 50 years have mostly failed, and
-  about what we should be doing instead.
+
+  covers what we should be doing instead.
 </p>
-
-
-
-
-
-
 
